@@ -4,10 +4,39 @@
     </head>
     <body>
         <h2>Blog posts:</h2>
-        <ol> 
-            <li><a href=blog1.html target="_blank">Blog Post One</a></li>
-            <li><a href=blog2.html target="_blank">Blog Post Two</a></li>
-            <li><a href=blog3.html target="_blank">Blog Post Three</a></li>
-        </ol>
+        <div id="link-container">
+            <ol> 
+                <li><a href=blog1.html target="_blank">Blog Post One</a></li>
+                <li><a href=blog2.html target="_blank">Blog Post Two</a></li>
+                <li><a href=blog3.html target="_blank">Blog Post Three</a></li>
+                <li><a href=blog4.html target="_blank">Blog Post Four</a></li>
+                <li><a href=blog5.html target="_blank">Blog Post Five</a></li>
+            </ol>
+        </div>
+        <style>
+            body {
+                background-color:lightcyan;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            li {
+                text-size-adjust: large;
+                margin: 10px;
+            }
+
+            #link-container {
+                display: flex;
+                justify-content: flex-start;
+                border: solid black;
+                background-color: white;
+                font-size: x-large;
+                margin: 15px;
+                height: 100vh;
+                width: 50%;
+            }
+        </style>
     </body>
 </html>

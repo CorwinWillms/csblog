@@ -7,53 +7,57 @@
     </style>
 
     <head>
-        <title>Blog Post Two: 9/10/2021</title>
+        <title>Blog Post Two: </title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
 
     <body>
-        <h1>What is AWS Lambda? 9/10/2021</h1>
-        <p>
-            AWS Lambda is a serverless, cheap way to run code. Code is 
-            run in response to events. These events can come from other AWS
-            services or any web app. Lambda is compatible with Java, Python, C#,
-            Go, PowerShell, Node.js and Ruby. Every time a Lambda is triggered
-            by an event a container is created. When the Lambda function runs to
-            completion the resources used by the container are reclaimed. Because
-            a new container is created every time the Lambda is triggered, 
-            Lambdas are highly scalable. When the Lambda receives more events,
-            it makes more containers, and when the events have been handled, 
-            everthing scales back down automatically. 
-        </p>
+        <main>
+            <h1>What is AWS Lambda? </h1>
+            <p>
+                AWS Lambda is a serverless, cheap way to run code. Code is 
+                run in response to events. These events can come from other AWS
+                services or any web app. Lambda is compatible with Java, Python, C#,
+                Go, PowerShell, Node.js and Ruby. Every time a Lambda is triggered
+                by an event a container is created. When the Lambda function runs to
+                completion the resources used by the container are reclaimed. Because
+                a new container is created every time the Lambda is triggered, 
+                Lambdas are highly scalable. When the Lambda receives more events,
+                it makes more containers, and when the events have been handled, 
+                everthing scales back down automatically. 
+            </p>
 
-        <p>
-            Over the summer, I wrote a Lambda function in Python for my internship.
-            I was amazed at how easy it was to deploy my code. The function I
-            wrote was triggered by an AWS API Gateway. When the API Gateway 
-            received a POST request, the event was sent to the Lambda to be handled.
-            Because AWS only charges for the time when the code is running, the 
-            cost to run this Lambda was almost nothing. Because of the way Lambda 
-            works with Python functions, I was able to access the data from 
-            the requests directly from a provided Python Dictionary. It was 
-            surprisingly easy to get my Python function handling POST requests
-            quickly and for almost no cost. 
-        </p>
+            <p>
+                Over the summer, I wrote a Lambda function in Python for my internship.
+                I was amazed at how easy it was to deploy my code. The function I
+                wrote was triggered by an AWS API Gateway. When the API Gateway 
+                received a POST request, the event was sent to the Lambda to be handled.
+                Because AWS only charges for the time when the code is running, the 
+                cost to run this Lambda was almost nothing. Because of the way Lambda 
+                works with Python functions, I was able to access the data from 
+                the requests directly from a provided Python Dictionary. It was 
+                surprisingly easy to get my Python function handling POST requests
+                quickly and for almost no cost. 
+            </p>
 
-        <H2>A "Hello World" Python Python AWS Lambda:</H2>
-        <p>lambda_handler is where code starts being executed. The event parameter
-            is a Python dictionary containing relevent data from the Lambda's trigger.
-        </p>
-        <div>
-            <pre id="code">
-                
-                <code>
-                    import json
+            <H2>A "Hello World" Python Python AWS Lambda:</H2>
+            <p>lambda_handler is where code starts being executed. The event parameter
+                is a Python dictionary containing relevent data from the Lambda's trigger.
+            </p>
+            <div>
+                <pre id="code">
+                    
+                    <code>
+                        import json
 
-                    def lambda_handler(event, context):
-                        print('hello world')
+                        def lambda_handler(event, context):
+                            print('hello world')
 
-                </code>
-            </pre>
-        </div>
-        <p><a href=index.html target="_blank">Home</a></p>
+                    </code>
+                </pre>
+            </div>
+            <p><a href=index.html>Home</a></p>
+        </main>
     </body>
 </html>

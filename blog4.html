@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Post Four</title>
+    </head>
+    <body>
+        <main>
+            <h1>How to make a Website for Mobile Users </h1>
+            <p>
+                Mobile users now account for the majority of traffic on the web.
+                Because of this shift in the way people are accessing things on the internet,
+                the majority of websites have changed to serve a mobile experience. One of the 
+                reasons many sites started serving a mobile experience is that search engines
+                now show preference to sites that are designed for mobile users. To help people 
+                make sure their site has a fair chance of being found by users, Google has created
+                a <a href="https://search.google.com/test/mobile-friendly" target="_blank">free tool</a> 
+                that checks if a site is set up with mobile users in mind. 
+                
+                Depending on how a website was created it can sometimes be easier to create a whole new site 
+                than to change the existing site to support a good mobile experience. However, for many sites
+                all that is required is adding a tag to html files and some extra style to css files. By adding
+                following line of code to an html file, you can make the page's zoom level responsive to the
+                screen size of the device a visitor is using. 
+            </p>
+            <div class="code-container">
+                <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1" /&gt</code>
+            </div>
+            <p>
+                With the use of a media query you can change the way a site styles it's html for users with smaller screens.
+                This is very helpful for changing things like button layout. Because people use imprecise meaty fingers to interact 
+                with their mobile devices, you may want make your buttons bigger or more spaced out when screen sizes are smaller.
+                Another good practice for small screens is to display content vertically to maximize your sites use of the limited 
+                screen real estate. Media queries can be used for any number of changes in the way content is displayed for varying 
+                screen sizes. Here is some code for a media query.
+            </p>
+            <div class="code-container">
+                <pre>
+                    <code>
+@media screen and (max-width: 480px){
+    *CSS-Code goes here
+}
+                    </code>
+                </pre>
+            </div>
+            <p>
+                
+                
+            </p>
+        </main>
+        <style>
+            body {
+                display: flex;
+                background-color: lightskyblue;
+                justify-content: center;
+                flex-direction: row;
+            }
+
+            main {
+                background-color: white;
+                height: 100vh;
+                width: 70%;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .code-container{
+                display: flex;
+                justify-content: center;
+            }
+
+        </style>
+        <p><a href=index.html>Home</a></p>
+    </body>
+</html>
